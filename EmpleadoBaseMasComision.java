@@ -8,6 +8,6 @@ public class EmpleadoBaseMasComision extends EmpleadoPorComision{
 
     @Override 
     public double ObtenerSalario() {
-        return salarioBase + (getTarifaPorComision() + ventasBrutas);
+        return salarioBase + getTarifaPorComision() + getVentasBrutas();
     } 
 }

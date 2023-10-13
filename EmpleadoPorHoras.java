@@ -1,5 +1,5 @@
-public EmpleadoPorHoras extends Empleado {
-    private int horas; 
+public class EmpleadoPorHoras extends Empleado {
+    private int horas;
     private double salario;
 
     public EmpleadoPorHoras (String primerNombre, String primerApellido, String NSS, int horas, double salario) {
@@ -20,14 +20,15 @@ public EmpleadoPorHoras extends Empleado {
         return salario;
     }
 
-    public void(double salario) {
-        this.salaroo = salario;
+    public void setSalario(double salario) {
+        this.salario = salario;
     }
+
     public double ObtenerSalario() {
         if(horas <= 40) {
             return salario * horas;
         } else {
-            return salario * horas((horas - 40) * salario * 1.5);
+            return salario * horas - ((horas - 40) * salario * 1.5);
         }
     }
 }

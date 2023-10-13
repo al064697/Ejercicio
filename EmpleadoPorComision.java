@@ -1,7 +1,7 @@
 public class EmpleadoPorComision extends Empleado {
     private double tarifaPorComision, ventasBrutas;
     
-    public EmpleadoAsalariado(String primerNombre, String primerApellido, String NSS, double tarifaPorComision, double ventasBrutas) {
+    public EmpleadoPorComision(String primerNombre, String primerApellido, String NSS, double tarifaPorComision, double ventasBrutas) {
         super(primerNombre, primerApellido, NSS);
         this.tarifaPorComision = tarifaPorComision;
         this.ventasBrutas = ventasBrutas;
@@ -13,6 +13,10 @@ public class EmpleadoPorComision extends Empleado {
 
     public void setVentasBrutas(double ventasBrutas) {
         this.ventasBrutas = ventasBrutas;
+    }
+
+    public double getTarifaPorComision() {
+        return tarifaPorComision;
     }
     public double ObtenerSalario() {
         return tarifaPorComision *  ventasBrutas;

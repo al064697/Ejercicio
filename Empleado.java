@@ -4,11 +4,11 @@ public abstract class Empleado {
     public Empleado(String primerNombre, String primerApellido, String NSS) {
         this.primerNombre = primerNombre;
         this.primerApellido = primerApellido;
-        this.NSS = NSS
+        this.NSS = NSS;
     }
 
     public String getNSS() {
-        return NSS
+        return NSS;
     }
 
     public void setNSS(String NSS) {
